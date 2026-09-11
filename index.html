@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>crappybot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #182427;
+    --panel: #203033;
+    --panel-2: #26383c;
+    --cream: #F2ECDD;
+    --cream-dim: #b9c4c0;
+    --amber: #E8A33D;
+    --amber-dim: #7a5a26;
+    --user-bubble: #E8A33D;
+    --user-text: #1B1406;
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    height: 100%;
+    margin: 0;
+    background: var(--ink);
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--cream);
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .app {
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--panel);
+    border-left: 1px solid #0e1517;
+    border-right: 1px solid #0e1517;
+  }
+  header {
+    padding: 18px 20px;
+    border-bottom: 1px solid #0e1517;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background: var(--panel-2);
+  }
+  header .name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--amber);
+    letter-spacing: 0.01em;
+  }
+  header .status {
+    font-size: 0.72rem;
+    color: var(--cream-dim);
+  }
+  header button {
+    background: none;
+    border: 1px solid var(--amber-dim);
+    color: var(--cream-dim);
+    font-size: 0.72rem;
+    padding: 5px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+  }
+  header button:hover { border-color: var(--amber); color: var(--amber); }
+
+  #log {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .row { display: flex; }
+  .row.user { justify-content: flex-end; }
+  .row.bot { justify-content: flex-start; }
+  .bubble {
+    max-width: 78%;
+    padding: 11px 15px;
+    border-radius: var(--radius);
+    line-height: 1.45;
+    font-size: 0.96rem;
+    white-space: pre-wrap;
+  }
+  .row.user .bubble {
+    background: var(--user-bubble);
+    color: var(--user-text);
+    border-bottom-right-radius: 4px;
+  }
+  .row.bot .bubble {
+    background: var(--panel-2);
+    color: var(--cream);
+    border-bottom-left-radius: 4px;
+  }
+
+  .bot-link {
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 6px;
+    padding: 8px 14px;
+    background: var(--amber);
+    color: var(--user-text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border-radius: 999px;
+  }
+  .bot-link:hover { filter: brightness(1.08); }
+
+  .carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 4px 0 6px;
+    max-width: 100%;
+  }
+  .card {
+    flex: 0 0 200px;
+    background: var(--panel);
+    border: 1px solid #0e1517;
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .card img { width: 100%; height: 110px; object-fit: cover; display: block; }
+  .card-body { padding: 10px 12px; }
+  .card-title { font-weight: 600; font-size: 0.88rem; margin-bottom: 2px; }
+  .card-subtitle { font-size: 0.78rem; color: var(--cream-dim); margin-bottom: 8px; }
+  .card .bot-link { margin: 0; display: block; text-align: center; }
+
+  form#composer {
+    display: flex;
+    gap: 8px;
+    padding: 14px;
+    border-top: 1px solid #0e1517;
+    background: var(--panel-2);
+  }
+  #composer input {
+    flex: 1;
+    border: 1px solid var(--amber-dim);
+    background: var(--ink);
+    color: var(--cream);
+    border-radius: 999px;
+    padding: 11px 16px;
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+  }
+  #composer input:focus { outline: none; border-color: var(--amber); }
+  #composer button {
+    background: var(--amber);
+    color: var(--user-text);
+    border: none;
+    border-radius: 999px;
+    padding: 0 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+  }
+  #composer button:hover { filter: brightness(1.08); }
+  #composer button:disabled { opacity: 0.5; cursor: default; }
+</style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <div class="name">crappybot</div>
+        <div class="status" id="status">loading…</div>
+      </div>
+      <button id="resetBtn" title="Clear memory and start over">New chat</button>
+    </header>
+    <div id="log"></div>
+    <form id="composer">
+      <input id="input" type="text" autocomplete="off" placeholder="Type a message…" disabled>
+      <button id="sendBtn" type="submit" disabled>Send</button>
+    </form>
+  </div>
+
+<script src="aiml-engine.js"></script>
+<script>
+const MANIFEST = {
+  properties: 'system/crappybot.properties',
+  sets: {
+    colors: 'sets/colors.set',
+    material: 'sets/material.set',
+    size: 'sets/size.set',
+  },
+  maps: {
+    countries: 'maps/countries.map',
+    objects: 'maps/objects.map',
+    test: 'maps/test.map',
+  },
+  substitutions: {
+    denormal: 'substitutions/denormal.substitution',
+    gender: 'substitutions/gender.substitution',
+    normal: 'substitutions/normal.substitution',
+    person: 'substitutions/person.substitution',
+    person2: 'substitutions/person2.substitution',
+  },
+  aiml: [
+    'files/countloop.aiml',
+    'files/format.aiml',
+    'files/formatlist.aiml',
+    'files/pand_learn.aiml',
+    'files/sets.aiml',
+    'files/topic.aiml',
+    'files/udc.aiml',
+    'files/website.aiml',
+  ],
+};
+
+const log = document.getElementById('log');
+const input = document.getElementById('input');
+const sendBtn = document.getElementById('sendBtn');
+const status = document.getElementById('status');
+const resetBtn = document.getElementById('resetBtn');
+
+function addRow(text, who) {
+  const row = document.createElement('div');
+  row.className = 'row ' + who;
+  const bubble = document.createElement('div');
+  bubble.className = 'bubble';
+  renderContent(bubble, text);
+  row.appendChild(bubble);
+  log.appendChild(row);
+  log.scrollTop = log.scrollHeight;
+}
+
+// Turn [[BUTTON|text|url]] and [[CAROUSEL|json]] markers into real elements.
+function renderContent(container, text) {
+  const parts = text.split(/(\[\[BUTTON\|[^\]]*\]\]|\[\[CAROUSEL\|[^\]]*\]\])/g);
+  parts.forEach(part => {
+    if (part.startsWith('[[BUTTON|')) {
+      const [, label, url] = part.slice(2, -2).split('|');
+      const a = document.createElement('a');
+      a.href = url; a.textContent = label; a.className = 'bot-link';
+      a.target = '_blank'; a.rel = 'noopener';
+      container.appendChild(a);
+    } else if (part.startsWith('[[CAROUSEL|')) {
+      const json = decodeURIComponent(part.slice('[[CAROUSEL|'.length, -2));
+      const cards = JSON.parse(json);
+      const wrap = document.createElement('div');
+      wrap.className = 'carousel';
+      cards.forEach(c => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          ${c.image ? `<img src="${c.image}" alt="">` : ''}
+          <div class="card-body">
+            <div class="card-title">${c.title || ''}</div>
+            <div class="card-subtitle">${c.subtitle || ''}</div>
+          </div>`;
+        if (c.button) {
+          const a = document.createElement('a');
+          a.href = c.button.url; a.textContent = c.button.text; a.className = 'bot-link';
+          a.target = '_blank'; a.rel = 'noopener';
+          card.querySelector('.card-body').appendChild(a);
+        }
+        wrap.appendChild(card);
+      });
+      container.appendChild(wrap);
+    } else if (part.trim() !== '') {
+      container.appendChild(document.createTextNode(part));
+    }
+  });
+}
+
+let engine;
+
+async function init() {
+  engine = new AIMLEngine('');
+  try {
+    await engine.loadAll(MANIFEST);
+    status.textContent = engine.categories.length + ' categories loaded';
+    input.disabled = false;
+    sendBtn.disabled = false;
+    input.focus();
+    addRow("Hey, I'm crappybot. Ask me something, or type \"Ask me a question\" to get started.", 'bot');
+  } catch (e) {
+    status.textContent = 'failed to load AIML files';
+    console.error(e);
+    addRow('Something went wrong loading my brain (AIML files). Check the browser console for details — this usually means index.html isn\'t sitting next to the files/, maps/, sets/, substitutions/, and system/ folders.', 'bot');
+  }
+}
+
+document.getElementById('composer').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const text = input.value.trim();
+  if (!text) return;
+  addRow(text, 'user');
+  input.value = '';
+  setTimeout(() => {
+    const reply = engine.respond(text);
+    addRow(reply, 'bot');
+  }, 120);
+});
+
+resetBtn.addEventListener('click', () => {
+  localStorage.removeItem('aiml_predicates');
+  localStorage.removeItem('aiml_session_id');
+  location.reload();
+});
+
+init();
+</script>
+</body>
+</html>
