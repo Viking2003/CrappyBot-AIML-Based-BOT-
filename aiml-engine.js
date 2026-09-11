@@ -387,7 +387,15 @@ class AIMLEngine {
         }
         const m = this.maps[name];
         if (!m) return this._defaultMap();
-        return m.has(key.toLowerCase()) ? m.get(key.toLowerCase()) : this._defaultMap();
+        if (m.has(key.toLowerCase())) return m.get(key.toLowerCase());
+        // Fallback: punctuation/whitespace-insensitive match, for multi-word
+        // keys like game/movie titles where users won't retype exact
+        // apostrophes, colons, or hyphens.
+        const norm = this._normalizeKey(key);
+        for (const [k, v] of m.entries()) {
+          if (this._normalizeKey(k) === norm) return v;
+        }
+        return this._defaultMap();
       },
 
       bot: (node, ctx) => {
@@ -459,6 +467,21 @@ class AIMLEngine {
   _defaultGet() { return this.properties['default-get'] || 'unknown'; }
   _defaultProperty() { return this.properties['default-property'] || 'unknown'; }
   _defaultMap() { return this.properties['default-map'] || 'unknown'; }
+  _normalizeKey(s) {
+    return s
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // fold accents: ö -> o, etc.
+      .toLowerCase()
+      .replace(/['’]/g, '')            // drop apostrophes entirely, don't space them out
+      .replace(/[^a-z0-9]+/g, ' ')     // everything else (colons, hyphens, parens) -> space
+      .trim().replace(/\s+/g, ' ')
+      .split(' ')
+      .map(w => this._romanToArabic(w))
+      .join(' ');
+  }
+  _romanToArabic(word) {
+    const romans = { i:1, ii:2, iii:3, iv:4, v:5, vi:6, vii:7, viii:8, ix:9, x:10 };
+    return romans[word] !== undefined ? String(romans[word]) : word;
+  }
 
   _applySubstitution(text, listName) {
     const list = this.substitutions[listName];

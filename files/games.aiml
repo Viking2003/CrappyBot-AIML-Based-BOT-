@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+    <pattern>Storyline of *</pattern>
+    <template>
+        <think><set name="gamestory"><map name="games"><star/></map></set></think>
+        <condition name="gamestory">
+            <li value="unknown">Sorry, I don't have a storyline for "<star/>" on file.</li>
+            <li><get name="gamestory"/></li>
+        </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>What is the storyline of *</pattern>
+    <template><srai>Storyline of <star/></srai></template>
+</category>
+
+<category>
+    <pattern>Tell me about *</pattern>
+    <template><srai>Storyline of <star/></srai></template>
+</category>
+</aiml>
