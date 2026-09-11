@@ -171,7 +171,12 @@ class AIMLEngine {
         output = "Something went wrong processing that reply.";
       }
     }
-    output = output.replace(/\s+/g, ' ').replace(/\s+([.,!?])/g, '$1').trim();
+    output = output
+      .split('\n')
+      .map(line => line.replace(/\s+([.,!?])/g, '$1').trim())
+      .join('\n')
+      .replace(/\n{3,}/g, '\n\n')
+      .trim();
     this.responseHistory.unshift(output);
     this._savePredicates();
     return output;
@@ -277,7 +282,7 @@ class AIMLEngine {
   }
 
   _evalChild(node, ctx) {
-    if (node.nodeType === 3) return node.textContent; // text
+    if (node.nodeType === 3) return node.textContent.replace(/\s+/g, ' '); // text (collapse source pretty-print whitespace)
     if (node.nodeType !== 1) return '';
     const tag = node.tagName.toLowerCase();
     const handler = this._tagHandlers[tag];
@@ -293,7 +298,7 @@ class AIMLEngine {
         return ctx.stars[idx] || '';
       },
       think: (node, ctx) => { this._evalChildren(node, ctx); return ''; },
-      break: () => ' ',
+      break: () => '\n',
       delay: () => '',
       sr: (node, ctx) => ctx.stars[0] || '',
 
@@ -435,6 +440,17 @@ class AIMLEngine {
       button: (node, ctx) => this._renderButton(node, ctx),
       link: (node, ctx) => this._renderButton(node, ctx),
       carousel: (node, ctx) => this._renderCarousel(node, ctx),
+      image: (node, ctx) => `[[IMAGE|${this._evalChildren(node, ctx).trim()}]]`,
+
+      ol: (node, ctx) => {
+        const items = Array.from(node.children).filter(c => c.tagName === 'li');
+        return '\n' + items.map((li, i) => `${i + 1}. ${this._evalChildren(li, ctx).trim()}`).join('\n') + '\n';
+      },
+      ul: (node, ctx) => {
+        const items = Array.from(node.children).filter(c => c.tagName === 'li');
+        return '\n' + items.map(li => `• ${this._evalChildren(li, ctx).trim()}`).join('\n') + '\n';
+      },
+      li: (node, ctx) => this._evalChildren(node, ctx),
 
       topic: () => '',
     };
