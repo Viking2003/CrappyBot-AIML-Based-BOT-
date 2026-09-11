@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+       <category>
+         <pattern>I AM BORED</pattern>
+         <template>
+             Choose an option!
+            <carousel>
+                 <card>
+                 <image>https://external-preview.redd.it/vyNmJtzFOUKZ84csfszE6btHJFBn0VTy5K6IaIqW0ZQ.jpeg?width=140&amp;height=105&amp;auto=webp&amp;s=bc57ff5a4649d215524b1c0f359e6b364cb5708a</image>
+                 <title>Marvel's Wolverine PS5 Latest News</title>
+                 <subtitle>Check story, gameplay and more.</subtitle>
+                 <button>
+                     <text>Know more, click here.</text>
+                     <url>https://www.marvel.com/games/marvels-wolverine</url>
+                 </button>
+             </card>
+             <card>
+                 <image>https://w0.peakpx.com/wallpaper/560/371/HD-wallpaper-mui-goku-dbs-dbz.jpg</image>
+                 <title><formal>Let's Power Up Your Mood</formal></title>
+                 <subtitle>IT'S TIME TO PAYYYYYYYYYYY!!!😈 </subtitle>
+                 <button>
+                     <text>IKOOO!!</text>
+                     <url>https://www.crunchyroll.com/series/GR19V7816/dragon-ball-super</url>
+                 </button>
+             </card>
+             
+             <card>
+                 <image>https://external-preview.redd.it/vyNmJtzFOUKZ84csfszE6btHJFBn0VTy5K6IaIqW0ZQ.jpeg?width=140&amp;height=105&amp;auto=webp&amp;s=bc57ff5a4649d215524b1c0f359e6b364cb5708a</image>
+                 <title>Marvel's Wolverine PS5 Latest News</title>
+                 <subtitle>Check story, gameplay and more.</subtitle>
+                 <button>
+                     <text>Know more, click here.</text>
+                     <url>https://www.marvel.com/games/marvels-wolverine</url>
+                 </button>
+             </card>
+            </carousel>
+         </template>
+     </category>
+     
+        <category>
+         <pattern>Dragon Ball Time</pattern>
+         <template>
+             Choose your form!
+             <card>
+                 <image>https://w0.peakpx.com/wallpaper/560/371/HD-wallpaper-mui-goku-dbs-dbz.jpg</image>
+                 <title><formal>Let's Power Up Your Mood</formal></title>
+                 <subtitle>IT'S TIME TO PAYYYYYYYYYYY!!!😈 </subtitle>
+                 <button>
+                     <text>IKOOO!!</text>
+                     <postback>GOKU</postback>
+                 </button>
+             </card>
+         </template>
+     </category>
+     
+     <category>
+         <pattern>GOKU</pattern>
+         <template>KAA--MEEE---HAAA---MEEEE----HAAAAAAAAA</template>
+     </category>
+     
+     <category>
+         <pattern>Google for *</pattern>
+         <template>
+             <link>
+                 <text>Search for <star/></text>
+                 <url>https://en.wikipedia.org/wiki/Robot</url>
+             </link>
+             Click above link.
+         </template>
+     </category>
+     
+     <category>
+         <pattern>Search for *</pattern>
+         <template>
+             <button>
+                 <text>Open <star/></text>
+                 <url>http://<star/>.com</url>
+             </button>
+         </template>
+     </category>
+     
+     <category>
+         <pattern>What do you look like</pattern>
+         <template>I look like this
+         <image>https://w0.peakpx.com/wallpaper/560/371/HD-wallpaper-mui-goku-dbs-dbz.jpg</image>
+         </template>
+     </category>
+  <category>
+        <pattern>Book</pattern>
+        <template>
+            Please pick an option!
+                <button>
+                    <text>Book Train Ticket!</text>
+                    <postback>Train</postback>
+                </button>
+                
+                <button>
+                    <text>Visit IRCTC Portal</text>
+                    <url>https://www.irctc.co.in</url>
+                </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Train</pattern>
+        <template>
+           Communicating with IRCTC...
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Flight</pattern>
+        <template>
+           Communicating with Flight Partner...
+        </template>
+    </category>
+</aiml>
