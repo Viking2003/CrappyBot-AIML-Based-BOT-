@@ -95,5 +95,20 @@
         <pattern># made you</pattern>
         <template><srai>created you</srai></template>
     </category>
+
+    <category>
+        <pattern># creator #</pattern>
+        <template><srai>created you</srai></template>
+    </category>
+
+    <category>
+        <pattern># father #</pattern>
+        <template><srai>created you</srai></template>
+    </category>
+
+    <category>
+        <pattern># created #</pattern>
+        <template>I was created by Vivek Yadav on 7th September 2026!</template>
+    </category>
 </aiml>
 
