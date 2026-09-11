@@ -17,10 +17,10 @@
         <template>
             <interval>
                 <jformat>MMMMMMMM dd</jformat>
-                <style>minutes</style>
+                <style>days</style>
                 <from><date jformat="MMMMMMMM dd"/></from>
                 <to>November 19</to>
-            </interval> minutes until GTA6.
+            </interval> days until GTA6.
         </template>
     </category>
     
