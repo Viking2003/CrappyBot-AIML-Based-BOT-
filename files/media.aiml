@@ -57,28 +57,6 @@
          <pattern>GOKU</pattern>
          <template>KAA--MEEE---HAAA---MEEEE----HAAAAAAAAA</template>
      </category>
-     
-     <category>
-         <pattern>Google for *</pattern>
-         <template>
-             <link>
-                 <text>Search for <star/></text>
-                 <url>https://en.wikipedia.org/wiki/Robot</url>
-             </link>
-             Click above link.
-         </template>
-     </category>
-     
-     <category>
-         <pattern>Search for *</pattern>
-         <template>
-             <button>
-                 <text>Open <star/></text>
-                 <url>http://<star/>.com</url>
-             </button>
-         </template>
-     </category>
-     
      <category>
          <pattern>What do you look like</pattern>
          <template>I look like this
