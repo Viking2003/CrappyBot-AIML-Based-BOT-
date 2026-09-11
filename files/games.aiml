@@ -6,8 +6,6 @@
         <think><set name="gamestory"><map name="games"><star/></map></set></think>
         <condition name="gamestory">
             <li value="unknown">Sorry, I don't have information about the storyline of "<star/>" game.</li>
-            <li value="Uncharted">Kindly mention proper game name like Uncharted: The Lost Legacy or Uncharted: A Thief's End.</li>
-            <li value="The Last of Us">Kindly mention The Last of Us Part I or The Last of Us Part II.</li>
             <li>Storyline: <get name="gamestory"/></li>
         </condition>
     </template>
@@ -20,18 +18,6 @@
 
 <category>
     <pattern>Tell me about *</pattern>
-    <template><srai>Storyline of <star/></srai></template>
-</category>
-
-<category>
-   <that>Kindly mention proper game name like Uncharted: The Lost Legacy or Uncharted: A Thief's End</that>
-    <pattern>*</pattern>
-    <template><srai>Storyline of <star/></srai></template>
-</category>
-
-<category>
-   <that>Kindly mention The Last of Us Part I or The Last of Us Part II</that>
-    <pattern>*</pattern>
     <template><srai>Storyline of <star/></srai></template>
 </category>
 
