@@ -12,11 +12,14 @@
     </category>
 
    	<category>
-	    <pattern>Show me a website about *</pattern>
-	    <template>
-	        <sraix><bot><bot name="webbot"/><star/></bot></sraix>
-	    </template>
-    </category>
+         <pattern>Search for *</pattern>
+         <template>
+             <button>
+                 <text>Open <star/></text>
+                 <url>http://<star/>.com</url>
+             </button>
+         </template>
+     </category>
     
     <category>
         <pattern>What is * *</pattern>
