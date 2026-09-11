@@ -1,2 +1,2 @@
 # CrappyBot-AIML-Based-BOT-
-Contains the files for crappybot.
+An AIML based conversational chatbot!
