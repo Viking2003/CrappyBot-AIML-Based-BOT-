@@ -11,15 +11,16 @@
         <template><srai>Hello</srai></template>
     </category>
 
-   	<category>
-         <pattern>Search for *</pattern>
-         <template>
-             <button>
-                 <text>Open <star/></text>
-                 <url>http://<star/>.com</url>
-             </button>
-         </template>
-     </category>
+   <category>
+    <pattern>Search for *</pattern>
+    <template>
+        <think><set name="siteurl"><map name="sitemap"><star/></map></set></think>
+        <condition name="siteurl">
+            <li value="unknown">Sorry, I don't know a website for "<star/>".</li>
+            <li><button><text>Open <star/></text><url><get name="siteurl"/></url></button></li>
+        </condition>
+    </template>
+</category>
     
     <category>
         <pattern>What is * *</pattern>
