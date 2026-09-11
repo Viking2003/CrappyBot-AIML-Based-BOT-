@@ -97,17 +97,17 @@
     </category>
 
     <category>
-        <pattern># creator #</pattern>
+        <pattern>_ creator</pattern>
         <template><srai>created you</srai></template>
     </category>
 
     <category>
-        <pattern># father #</pattern>
+        <pattern>_ father</pattern>
         <template><srai>created you</srai></template>
     </category>
 
     <category>
-        <pattern># created #</pattern>
+        <pattern>_ created</pattern>
         <template>I was created by Vivek Yadav on 7th September 2026!</template>
     </category>
 </aiml>
