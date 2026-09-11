@@ -85,5 +85,15 @@
         <pattern>What did you say</pattern>
         <template>I said <response index="2"/></template>
     </category>
+
+    <category>
+        <pattern># created you</pattern>
+        <template>My creator is Vivek Yadav!</template>
+    </category>
+    
+    <category>
+        <pattern># made you</pattern>
+        <template><srai>created you</srai></template>
+    </category>
 </aiml>
 
