@@ -117,6 +117,13 @@
   }
   .bot-link:hover { filter: brightness(1.08); }
 
+  .bot-image {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+
   .carousel {
     display: flex;
     gap: 10px;
@@ -210,12 +217,12 @@ const MANIFEST = {
     'files/countloop.aiml',
     'files/format.aiml',
     'files/formatlist.aiml',
+    'files/media.aiml',
     'files/pand_learn.aiml',
     'files/sets.aiml',
     'files/topic.aiml',
     'files/udc.aiml',
     'files/website.aiml',
-    'files/media.aiml',
   ],
 };
 
@@ -238,7 +245,7 @@ function addRow(text, who) {
 
 // Turn [[BUTTON|text|url]] and [[CAROUSEL|json]] markers into real elements.
 function renderContent(container, text) {
-  const parts = text.split(/(\[\[BUTTON\|[^\]]*\]\]|\[\[CAROUSEL\|[^\]]*\]\])/g);
+  const parts = text.split(/(\[\[BUTTON\|[^\]]*\]\]|\[\[CAROUSEL\|[^\]]*\]\]|\[\[IMAGE\|[^\]]*\]\])/g);
   parts.forEach(part => {
     if (part.startsWith('[[BUTTON|')) {
       const [, label, url] = part.slice(2, -2).split('|');
@@ -246,6 +253,11 @@ function renderContent(container, text) {
       a.href = url; a.textContent = label; a.className = 'bot-link';
       a.target = '_blank'; a.rel = 'noopener';
       container.appendChild(a);
+    } else if (part.startsWith('[[IMAGE|')) {
+      const url = part.slice('[[IMAGE|'.length, -2);
+      const img = document.createElement('img');
+      img.src = url; img.className = 'bot-image'; img.loading = 'lazy'; img.alt = '';
+      container.appendChild(img);
     } else if (part.startsWith('[[CAROUSEL|')) {
       const json = decodeURIComponent(part.slice('[[CAROUSEL|'.length, -2));
       const cards = JSON.parse(json);
