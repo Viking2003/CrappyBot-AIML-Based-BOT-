@@ -1,15 +1,32 @@
 [
   ["Ghost of Tsushima", "Samurai Jin Sakai adopts unconventional stealth tactics as the 'Ghost' to liberate Tsushima Island from a brutal Mongol invasion led by Khotun Khan, testing his honor."],
   ["Uncharted 4: A Thief's End", "Retired treasure hunter Nathan Drake is pulled back in by his long-lost brother Sam to find the lost pirate colony of Libertalia and its immense fortune."],
+  ["A Thief End", "SEE:Uncharted 4: A Thief's End"],
   ["Uncharted: The Lost Legacy", "Chloe Frazer and Nadine Ross team up to find the ancient Tusk of Ganesh in India, racing against a ruthless warlord funding his rebellion with its power."],
+  ["The Lost Legacy", "SEE:Uncharted: The Lost Legacy"],
   ["The Witcher 3: Wild Hunt", "Monster hunter Geralt of Rivia searches for his adopted daughter Ciri, who possesses rare powers coveted by the spectral Wild Hunt riders threatening the world."],
+  ["Witcher 3", "SEE:The Witcher 3: Wild Hunt"],
+  ["The Witcher 3", "SEE:The Witcher 3: Wild Hunt"],
+  ["Witcher Wild Hunt", "SEE:The Witcher 3: Wild Hunt"],
   ["Marvel's Spider-Man 2", "Peter Parker and Miles Morales face Kraven the Hunter and a corrupting Venom symbiote, forcing them to unite against escalating threats engulfing New York City."],
+  ["Spider Man 2", "SEE:Marvel's Spider-Man 2"],
   ["Marvel's Spider-Man (Remastered)", "Peter Parker balances his personal life while dismantling Wilson Fisk's criminal empire, only for Mister Negative to exploit the resulting power vacuum with a deadly bio-weapon."],
+  ["Spider Man", "SEE:Marvel's Spider-Man (Remastered)"],
   ["Tomb Raider Trilogy", "Lara Croft evolves from a shipwrecked survivor on Yamatai into a hardened explorer, battling cults and the shadowy Trinity organization across Siberia, Peru, and Mexico."],
+  ["Tomb Raider", "SEE:Tomb Raider Trilogy"]
   ["The Last of Us Part I", "Smuggler Joel escorts immune teenager Ellie across a fungal-pandemic-ravaged America, hoping she holds the key to a cure, forming an unbreakable bond along the way."],
+  ["TLOU1", "SEE:The Last of Us Part I"],
+  ["The Last of Us Part 1", "SEE:The Last of Us Part I"],
   ["The Last of Us Part II", "Ellie's quest for revenge after Joel's death collides with Abby's own parallel story, exploring cycles of violence and empathy across a divided, war-torn Seattle."],
+  ["TLOU2", "SEE:The Last of Us Part II"],
+  ["The Last of Us Part 2", "SEE:The Last of Us Part II"],
   ["Detroit: Become Human", "Three androids—Kara, Connor, and Markus—navigate deviancy, identity, and rebellion in near-future Detroit, with player choices shaping their fates and android-human relations."],
   ["God of War Ragnarök", "Kratos and his son Atreus, revealed as the trickster god Loki, journey through the Nine Realms trying to prevent—or survive—the prophesied apocalypse of Ragnarök."],
+  ["GTA6", "SEE:Grand Theft Auto VI"],
+  ["GTA 6", "SEE:Grand Theft Auto VI"],
+  ["GTA VI", "SEE:Grand Theft Auto VI"],
+  ["GTAVI", "SEE:Grand Theft Auto VI"],
   ["Grand Theft Auto VI", "Set in the fictional Vice City and beyond, GTA VI follows a Bonnie-and-Clyde-style criminal duo navigating a satirical, crime-ridden modern America in Rockstar's next open-world saga."],
-  ["Marvel's Wolverine", "Logan, the feral mutant with an unbreakable adamantium skeleton and rapid healing factor, is thrust into a brutal, R-rated single-player story exploring his violent past and code of honor."]
+  ["Marvel's Wolverine", "Logan, the feral mutant with an unbreakable adamantium skeleton and rapid healing factor, is thrust into a brutal, R-rated single-player story exploring his violent past and code of honor."],
+  ["Wolverine", "SEE:Marvel's Wolverine"]
 ]

@@ -387,15 +387,7 @@ class AIMLEngine {
         }
         const m = this.maps[name];
         if (!m) return this._defaultMap();
-        if (m.has(key.toLowerCase())) return m.get(key.toLowerCase());
-        // Fallback: punctuation/whitespace-insensitive match, for multi-word
-        // keys like game/movie titles where users won't retype exact
-        // apostrophes, colons, or hyphens.
-        const norm = this._normalizeKey(key);
-        for (const [k, v] of m.entries()) {
-          if (this._normalizeKey(k) === norm) return v;
-        }
-        return this._defaultMap();
+        return this._lookupMap(m, key, 0);
       },
 
       bot: (node, ctx) => {
@@ -467,6 +459,27 @@ class AIMLEngine {
   _defaultGet() { return this.properties['default-get'] || 'unknown'; }
   _defaultProperty() { return this.properties['default-property'] || 'unknown'; }
   _defaultMap() { return this.properties['default-map'] || 'unknown'; }
+
+  // Looks up `key` in map `m`: exact match, then punctuation/accent/roman-numeral
+  // normalized match, then follows "SEE:OtherKey" alias redirects (so several
+  // short names can point at one canonical, maintained entry).
+  _lookupMap(m, key, depth) {
+    if (depth > 5) return this._defaultMap(); // guard against alias loops
+    let value = null;
+    if (m.has(key.toLowerCase())) {
+      value = m.get(key.toLowerCase());
+    } else {
+      const norm = this._normalizeKey(key);
+      for (const [k, v] of m.entries()) {
+        if (this._normalizeKey(k) === norm) { value = v; break; }
+      }
+    }
+    if (value === null) return this._defaultMap();
+    const match = /^\s*SEE:\s*(.+)$/i.exec(value);
+    if (match) return this._lookupMap(m, match[1].trim(), depth + 1);
+    return value;
+  }
+
   _normalizeKey(s) {
     return s
       .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // fold accents: ö -> o, etc.
