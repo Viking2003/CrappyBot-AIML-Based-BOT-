@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>test</pattern>
+	    <template>
+	        this is line 1<delay>3</delay>
+	        this is line 2<delay>3</delay>
+	        this is line 3
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>list</pattern>
+        <template>
+            <ol>
+                <li>Book train ticket</li>
+                <li>Book flight ticket</li>
+                <li>Visit our website</li>
+            </ol>
+            
+            <ul>
+                <li>Note: Authentication is required for booking process.</li>
+                <li>Ensure responsibility of your belongings.</li>
+                <li>Ensure to maintain hygience, don't litter and help us keep ourselves clean.</li>
+            </ul>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>1</pattern>
+        <template>
+           Train ticket booking in process.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>2</pattern>
+        <template>
+           Flight ticket booking in process.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>3</pattern>
+        <template>
+           Redirecting to our website...
+           <button>
+                <text>Click here to proceed to train ticket portal.</text>
+                <url>https://irctc.co.in</url>
+            </button>
+            <button>
+                <text>Click here to proceed to flight ticket portal.</text>
+                <url>https://goindigo.in</url>
+            </button>
+        </template>
+    </category>
+</aiml>

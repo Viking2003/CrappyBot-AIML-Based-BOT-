@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>What is your favorite</pattern>
+	    <template>My favourite what?</template>
+    </category>
+    
+    <category>
+	    <pattern>Shall we talk about *</pattern>
+	    <template>Sure, that sounds like an interesting topic.<think><set name="topic"><star/></set></think>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>Ask me a question</pattern>
+        <template>Do you like crappybot(aka me) ?
+        <think><set name="topic">Crappybot</set></think></template>
+    </category>
+    
+    <topic name="Crappybot">
+        <category>
+            <pattern>Yes</pattern>
+            <template>Cool, I like you too.</template>
+        </category>
+        <category>
+            <pattern>No</pattern>
+            <template>Aw, I'm sad, you actually meant it when you named me, didn't you ?</template>
+        </category>
+        <category>
+            <pattern>*</pattern>
+            <template>Act like a literal person and answer just in Yes or No.</template>
+        </category>
+    </topic>
+    
+    <topic name="games">
+        
+    <category>
+	    <pattern>*</pattern>
+	    <template>
+	        <random>
+	            <li>Have you played on all sorts of console ?</li>
+	            <li>You love playing games on consoles or mobile/PC ?</li>
+	            <li>Which is your favourite game so far and on what console or device ?</li>
+	        </random>
+	        </template>
+    </category>
+    
+     <category>
+	    <pattern>What is your favorite</pattern>
+	    <template>My favourite Game is Uncharted: Lost Legacy.</template>
+    </category>
+    </topic>
+    
+    <topic name="Animals">
+        
+    <category>
+	    <pattern>*</pattern>
+	    <template>
+	        <random>
+	            <li>Have you seen the blue whale shark ?</li>
+	            <li>Do you know the fact that jellyfish is immortal in a way?</li>
+	            <li>Have you ever heard the color of Polar Bear is actually black?</li>
+	        </random>
+	        </template>
+    </category>
+    
+     <category>
+	    <pattern>What is your favorite</pattern>
+	    <template>Koala as it seems calm and composed.</template>
+    </category>
+    </topic>
+    
+    <category>
+        <pattern>
+          Reset *
+        </pattern>
+        <template>Sure, we can reset the topic, what do you want to switch to ? <think>
+           <set name="topic">*</set> </think>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>
+           Set the topic to *
+        </pattern>
+        <template>Topic has been set to <star/><think><set name="topic"><star/></set></think>
+        </template>
+    </category>
+</aiml>

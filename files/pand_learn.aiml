@@ -1,0 +1,6 @@
+<aiml version="2.0">
+
+<category><pattern>What did I eat</pattern><template>You just told me you ate a squirrel</template></category>
+
+
+</aiml>

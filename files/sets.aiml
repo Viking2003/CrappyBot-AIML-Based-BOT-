@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>My favorite color is <set>colors</set></pattern>
+	    <template>Nice choice! I like <star/> too.</template>
+    </category>
+
+    <category>
+	    <pattern>My favorite color is *</pattern>
+	    <template>Interesting, I'm not aware of that color.</template>
+    </category>
+    
+    <category>
+	    <pattern>Is <set>number</set> a Number</pattern>
+	    <template>Yes. <star/> is a number.</template>
+    </category>
+
+    <category>
+	    <pattern>Is * a number</pattern>
+	    <template>No it isn't.</template>
+    </category>
+    
+    
+    <category>
+        <pattern>I want <set>size</set> size Attire</pattern>
+        <template><think><set name="size"><star/></set></think>
+         <condition name="material">
+               <li value="unknown">What material do you want?</li>
+               <li>Getting an attire of <star/> size and <get name="material"/> material!</li>
+            </condition>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>I want <set>material</set> material Attire</pattern>
+        <template>
+            <think><set name="material"><star/></set></think>
+            <condition name="size">
+               <li value="unknown">What size do you want?</li>
+               <li>Getting an attire of <star/> material and <get name="size"/> size.</li>
+            </condition>
+            </template>
+    </category>
+    
+    <category>
+        <pattern>I want <set>size</set> size and <set>material</set> material Attire</pattern>
+        <template>Getting an attire of 
+        <condition name="size">
+        <li value="unknown"> <star/> </li> 
+        <li> <get name="size"/> </li>  
+        </condition>
+        size 
+        and 
+        <condition name="material">
+        <li value="unknown"> <star index="2"/> </li>
+        <li> <get name="material"/> </li> 
+        </condition>
+        material!</template>
+    </category>
+    
+    <category>
+        <pattern># <set>size</set> # <set>material</set> #</pattern>
+        <template>Coming right up!</template>
+    </category>
+    
+    <category>
+        <pattern>I want *</pattern>
+        <template>Kindly specify size and material for the attire.</template>
+    </category>
+    
+    
+    <category>
+        <pattern>
+            _ size and _ material
+        </pattern>
+        <template>
+            <think><set name="size"><star/></set> <set name="material"><star index="2"/></set></think>
+            <srai>I want <get name="size"/> size and <get name="material"/> material Attire</srai></template>
+    </category>
+    
+     <category>
+        <pattern>
+            _ size
+        </pattern>
+        <template>
+            <think><set name="size"><star/></set></think>
+        <srai>I want <get name="size"/> size and <get name="material"/> material Attire</srai>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>
+          _ material
+        </pattern>
+        <template>
+        <srai>I want <get name="size"/> size and <star/> material Attire</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Name something that is <set>colors</set></pattern>
+        <template>How about <map name="objects"><star/></map></template>
+    </category>
+    
+     <category>
+        <pattern>Name something that is *</pattern>
+        <template>How about <star/> paint!</template>
+    </category>
+    
+    <category>
+        <pattern>What comes before *</pattern>
+        <template>
+            <map name="predecessor"><star/></map>
+        </template>
+    </category>
+    
+    
+    
+    
+</aiml>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+   	<category>
+	    <pattern>Show me a website about *</pattern>
+	    <template>
+	        <sraix><bot><bot name="webbot"/><star/></bot></sraix>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>What is * *</pattern>
+        <template>I don't know what <person><star index="1"/></person> <star index="2"/> is.</template>
+    </category>
+    
+    <category>
+        <pattern>date</pattern>
+        <template>It is <date locale="fr_FR"/></template>
+    </category>
+    
+    <category>
+        <pattern>I like *</pattern>
+        <template>What do you like most about <denormalize><star/></denormalize></template>
+    </category>
+    
+    <category>
+        <pattern>TEST *</pattern>
+        <template>
+            first = <first><star/></first><break/>
+            rest = <rest><star/></rest>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>GTEST *</pattern>
+        <template>
+            <gender><star/></gender>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>test2 *</pattern>
+        <template>
+            <sentence><lowercase><star/></lowercase></sentence>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>How much do you know</pattern>
+        <template>I know <map name="predecessor"><size/></map> items of knowledge.</template>
+    </category>
+    
+    <category>
+        <pattern>What is my ID</pattern>
+        <template>
+            I know you as <id/>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>What did I say</pattern>
+        <template>You said <input index="2"/></template>
+    </category>
+    
+    <category>
+        <pattern>Before that</pattern>
+        <template>You said <input index="4"/></template>
+    </category>
+    
+    <category>
+        <pattern>What did you say</pattern>
+        <template>I said <response index="2"/></template>
+    </category>
+</aiml>
+

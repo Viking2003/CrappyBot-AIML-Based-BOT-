@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>Show me a website about *</pattern>
+	    <template>
+	        <sraix><bot><bot name="webbot"></bot></bot><star/></sraix>
+	    </template>
+    </category>
+    
+    
+    <category>
+        <pattern>How many days until GTA6</pattern>
+        <template>
+            <interval>
+                <jformat>MMMMMMMM dd</jformat>
+                <style>minutes</style>
+                <from><date jformat="MMMMMMMM dd"/></from>
+                <to>November 19</to>
+            </interval> minutes until GTA6.
+        </template>
+    </category>
+    
+      <category>
+        <pattern>How old are you</pattern>
+        <template>
+            <interval>
+                <jformat>MMMMMMMM dd</jformat>
+                <style>days</style>
+                <from><bot name="birthdate"/></from>
+                <to><date jformat="MMMMMMMM dd"/></to>
+            </interval> days
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Talk to *</pattern>
+        <template>I have asked to talk to <person2/></template>
+    </category>
+    
+    <category>
+        <pattern>What do you use</pattern>
+        <template>I use <program/></template>
+    </category>
+</aiml>

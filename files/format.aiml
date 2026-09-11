@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<category>
+	    <pattern>Spell *</pattern>
+	    <template>
+	        <lowercase><explode><star/></explode></lowercase>
+	    </template>
+    </category>
+    
+    <category>
+	    <pattern>My go to place is *</pattern>
+	    <template>
+	        <formal><star/></formal> is a heavenly place to visit!
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>I ate *</pattern>
+        <template>
+          Was it tasty ?
+            <learnf>
+                <category>
+                    <pattern>What did I eat</pattern>
+                    <template>You just told me you ate <eval><star/></eval>
+                    </template>
+                </category>
+            </learnf>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* IS *</pattern>
+        <template>
+            I have remembered that.
+            <learn>
+                <category>
+                    <pattern>What is <eval><star/></eval></pattern>
+                    <template>I believe it is <eval><star index="2"/></eval></template>
+                </category>
+                 <category>
+                    <pattern>Name <eval><star index="2"/></eval></pattern>
+                    <template>How about <eval><star/></eval> ?</template>
+                </category>
+            </learn>
+        </template>
+    </category>
+    
+</aiml>

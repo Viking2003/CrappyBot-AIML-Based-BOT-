@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>Count *</pattern>
+	    <template>
+	        <think>
+	            <set name="count">0</set>
+	            <set name="target"><star/></set>
+	        </think>
+	        <srai>COUNTLOOP</srai>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>COUNTLOOP</pattern>
+        <template>
+            <set name="count"><map name="successor"><get name="count"/></map></set>
+            <condition name="count">
+                <li><value><get name="target"/></value></li>
+                <li> - <srai>COUNTLOOP</srai></li>
+            </condition>
+            </template>
+    </category>
+    
+    
+    <category>
+        <pattern># WORLD CUP #</pattern>
+        <template><random>
+            <li>Are you watching it ?</li>
+            <li>I wonder who'll win.</li>
+            <li>I don't know much about World Cup.</li>
+        </random></template>
+    </category>
+    
+
+    <category>
+        <pattern>$Where is the World Cup</pattern>
+        <template>It is being held in Romania this year.</template>
+    </category>
+    
+    
+    <category>
+        <pattern>Count to <set>number</set> BY 2</pattern>
+        <template>
+            <think><set name="count">0</set></think>
+            <condition name="count">
+                <li><value><star/></value></li>
+                <li>
+                     <think><set name="count">
+                        <map name="successor"><get name="count"/></map>
+                    </set></think>
+                    
+                    <set name="count">
+                        <map name="successor"><get name="count"/></map>
+                    </set><break/>
+                    <loop/>
+                </li>
+            </condition>
+        </template>
+    </category>
+    
+    
+      <category>
+        <pattern>Count from <set>number</set> to <set>number</set></pattern>
+        <template>
+            <set name="count"><star/></set><break/>
+            <condition name="count">
+                <li><value><star index="2"/></value></li>
+                <li>
+                    <set name="count">
+                        <map name="successor"><get name="count"/></map>
+                    </set><break/>
+                    <loop/>
+                </li>
+            </condition>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>Count BACKWARDS FROM <set>number</set> to <set>number</set></pattern>
+        <template>
+            <set name="count"><star/></set><break/>
+            <condition name="count">
+                <li><value><star index="2"/></value></li>
+                <li>
+                    <set name="count">
+                        <map name="predecessor"><get name="count"/></map>
+                    </set><break/>
+                    <loop/>
+                </li>
+            </condition>
+        </template>
+    </category>
+    
+    
+    <category>
+        <pattern>Name some countries</pattern>
+        <template>
+            <think><set name="country">START</set></think>
+            <condition name="country">
+                <li><value>END</value></li>
+                <li>
+                    <set name="country">
+                        <map name="countries"><get name="country"/></map>
+                    </set><break/>
+                    <loop/>
+                </li>
+            </condition>
+        </template>
+    </category>
+    
+    
+    <category>
+        <pattern>DRAW <set>number</set> LINES</pattern>
+        <template>
+            <think><set name="count">0</set></think>
+            <condition name="count">
+                <li><value><star/></value></li>
+                <li>
+                    <think>
+                    <set name="count">
+                        <map name="successor"><get name="count"/></map>
+                    </set></think>
+                    <srai>Draw LINES</srai>
+                    <loop/>
+                </li>
+            </condition>
+        </template>
+    </category>
+    
+    
+    <category>
+        <pattern>Draw LINES</pattern>
+        <template>---------------------<break/></template>
+    </category>
+    
+    
+    <category>
+        <pattern>TRIANGLE <set>number</set></pattern>
+        <template>
+            <think><set name="count1">0</set></think>
+            <condition name="count1">
+                <li><value><star/></value></li>
+                <li>
+                    <think>
+                    <set name="count1">
+                        <map name="successor"><get name="count1"/></map>
+                    </set></think>
+                    <srai>TRIANGLELINE <get name="count1"/></srai><break/>
+                    <loop/>
+                </li>
+            </condition>
+        </template>
+    </category>
+    
+    <category>
+       <pattern>TRIANGLELINE <set>number</set></pattern>
+        <template>
+            <think><set name="count2">0</set></think>
+            <condition name="count2">
+                <li><value><star/></value></li>
+                <li>
+                    <think>
+                    <set name="count2">
+                        <map name="successor"><get name="count2"/></map>
+                    </set></think>
+                    X
+                    <loop/>
+                </li>
+            </condition>
+        </template>
+    </category>
+    
+    
+</aiml>
