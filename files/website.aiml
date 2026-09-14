@@ -16,22 +16,43 @@
         <pattern>How many days until GTA6</pattern>
         <template>
             <interval>
-                <jformat>MMMMMMMM dd</jformat>
+                <jformat>MMMMMMMM dd YYYY</jformat>
                 <style>days</style>
-                <from><date jformat="MMMMMMMM dd"/></from>
-                <to>November 19</to>
-            </interval> days until GTA6.
+                <from><date jformat="MMMMMMMM dd YYYY"/></from>
+                <to>November 19, 2026</to>
+            </interval> days to go.
+        </template>
+    </category>
+
+    <category>
+        <pattern>How many days until GTA VI</pattern>
+        <template>
+            <srai>How many days until GTA6</srai>
         </template>
     </category>
     
+    <category>
+        <pattern>How many days until GTAVI</pattern>
+        <template>
+            <srai>How many days until GTA6</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>How many days until GTA 6</pattern>
+        <template>
+            <srai>How many days until GTA6</srai>
+        </template>
+    </category>
+
       <category>
         <pattern>How old are you</pattern>
         <template>
             <interval>
-                <jformat>MMMMMMMM dd</jformat>
+                <jformat>MMMMMMMM dd YYYY</jformat>
                 <style>days</style>
                 <from><bot name="birthdate"/></from>
-                <to><date jformat="MMMMMMMM dd"/></to>
+                <to><date jformat="MMMMMMMM dd YYYY"/></to>
             </interval> days
         </template>
     </category>
