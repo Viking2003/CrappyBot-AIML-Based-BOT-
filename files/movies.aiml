@@ -31,12 +31,28 @@
 </category>
 
 <category>
-   <pattern># watch # online # movie #</pattern>
+   <pattern># watch # movie # online #</pattern>
    <template><srai>movie sites</srai></template>
 </category>
 
 <category>
    <pattern># stream # movie #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+
+<category>
+   <pattern># download # movies #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
+   <pattern># watch # movies # online #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
+   <pattern># stream # movies #</pattern>
    <template><srai>movie sites</srai></template>
 </category>
 
@@ -75,12 +91,27 @@
 </category>
 
 <category>
-    <pattern># watch # online # anime #</pattern>
+    <pattern># watch # anime # online #</pattern>
     <template><srai>anime sites</srai></template>
 </category>
 
 <category>
     <pattern># stream # anime #</pattern>
+    <template><srai>anime sites</srai></template>
+</category>
+
+<category>
+    <pattern># download # animes #</pattern>
+    <template><srai>anime sites</srai></template>
+</category>
+
+<category>
+    <pattern># watch # animes # online #</pattern>
+    <template><srai>anime sites</srai></template>
+</category>
+
+<category>
+    <pattern># stream # animes #</pattern>
     <template><srai>anime sites</srai></template>
 </category>
 
