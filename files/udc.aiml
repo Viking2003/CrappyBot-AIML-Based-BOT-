@@ -38,10 +38,16 @@
     </category>
     
     <category>
-        <pattern>Tell me *</pattern>
+        <pattern>Tell me your name #</pattern>
         <template>
-            first = <first><star/></first><break/>
-            rest = <rest><star/></rest>
+            You can call me CrappyBot. I am a chatbot created by Vivek Yadav.
+        </template>
+    </category>
+
+    <category>
+        <pattern>What # your name #</pattern>
+        <template>
+            <srai>Tell me your name</srai>
         </template>
     </category>
     
@@ -59,11 +65,21 @@
         </template>
     </category>
     
-    <category>
-        <pattern>How much do you know</pattern>
-        <template>I know <map name="predecessor"><size/></map> items of knowledge.</template>
-    </category>
+   <category>
+     <pattern>How much # knowledge #</pattern>
+     <template>I know <size/> items of knowledge.</template>
+   </category>
     
+    <category>
+     <pattern>How much # learnt #</pattern>
+     <template><srai>How much knowledge</srai></template>
+    </category>
+
+    <category>
+     <pattern>How much # know #</pattern>
+     <template><srai>How much knowledge</srai></template>
+    </category>
+
     <category>
         <pattern>What is my ID</pattern>
         <template>
@@ -109,6 +125,11 @@
     <category>
         <pattern>when # created #</pattern>
         <template>I was created by Vivek Yadav on 7th September 2026!</template>
+    </category>
+
+     <category>
+        <pattern>when # made #</pattern>
+        <template><srai>when created</srai></template>
     </category>
 </aiml>
 

@@ -396,6 +396,16 @@ class AIMLEngine {
       },
       id: () => this.sessionId,
       program: () => 'a browser-based AIML interpreter',
+      size: () => String(this.categories.length),
+      vocabulary: () => {
+        const words = new Set();
+        for (const cat of this.categories) {
+          for (const tok of cat.patternTokens) {
+            if (tok.type === 'word') words.add(tok.value.toLowerCase());
+          }
+        }
+        return String(words.size);
+      },
 
       input: (node, ctx) => {
         const idx = parseInt(node.getAttribute('index') || '1', 10) - 1;
