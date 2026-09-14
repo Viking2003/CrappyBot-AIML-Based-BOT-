@@ -15,10 +15,13 @@
   ["Tomb Raider Trilogy", "Lara Croft evolves from a shipwrecked survivor on Yamatai into a hardened explorer, battling cults and the shadowy Trinity organization across Siberia, Peru, and Mexico."],
   ["Tomb Raider", "SEE:Tomb Raider Trilogy"],
   ["The Last of Us Part I", "Smuggler Joel escorts immune teenager Ellie across a fungal-pandemic-ravaged America, hoping she holds the key to a cure, forming an unbreakable bond along the way."],
+  ["TLOU", "SEE:The Last of Us Part I"],
   ["TLOU1", "SEE:The Last of Us Part I"],
+  ["The Last of Us", "SEE:The Last of Us Part I"],
   ["The Last of Us Part 1", "SEE:The Last of Us Part I"],
   ["The Last of Us Part II", "Ellie's quest for revenge after Joel's death collides with Abby's own parallel story, exploring cycles of violence and empathy across a divided, war-torn Seattle."],
   ["TLOU2", "SEE:The Last of Us Part II"],
+  ["The Last of Us 2", "SEE:The Last of Us Part II"],
   ["The Last of Us Part 2", "SEE:The Last of Us Part II"],
   ["Detroit: Become Human", "Three androids—Kara, Connor, and Markus—navigate deviancy, identity, and rebellion in near-future Detroit, with player choices shaping their fates and android-human relations."],
   ["God of War Ragnarök", "Kratos and his son Atreus, revealed as the trickster god Loki, journey through the Nine Realms trying to prevent—or survive—the prophesied apocalypse of Ragnarök."],
@@ -28,5 +31,221 @@
   ["GTAVI", "SEE:Grand Theft Auto VI"],
   ["Grand Theft Auto VI", "Set in the fictional Vice City and beyond, GTA VI follows a Bonnie-and-Clyde-style criminal duo navigating a satirical, crime-ridden modern America in Rockstar's next open-world saga."],
   ["Marvel's Wolverine", "Logan, the feral mutant with an unbreakable adamantium skeleton and rapid healing factor, is thrust into a brutal, R-rated single-player story exploring his violent past and code of honor."],
-  ["Wolverine", "SEE:Marvel's Wolverine"]
+  ["Wolverine", "SEE:Marvel's Wolverine"],
+  [
+    "Forza Horizon",
+    "The Forza Horizon series drops players into open-world driving festivals across evolving real-world-inspired locales, blending arcade-style racing and car collecting with seasonal events rather than a traditional story."
+  ],
+  [
+    "Forza Horizon Series",
+    "SEE:Forza Horizon"
+  ],
+  [
+    "Forza",
+    "SEE:Forza Horizon"
+  ],
+  [
+    "Astro Bot",
+    "Captain Astro's ship is shattered by a mysterious force that scatters his crew of tiny bots across a galaxy of PlayStation-themed planets, sending him on a platforming rescue mission to bring them home."
+  ],
+  [
+    "Astrobot",
+    "SEE:Astro Bot"
+  ],
+  [
+    "PUBG",
+    "PUBG (PlayerUnknown's Battlegrounds) drops up to 100 players onto a shrinking island to scavenge weapons and gear, with no narrative beyond survival: fight until only one player or team remains."
+  ],
+  [
+    "PlayerUnknown's Battlegrounds",
+    "SEE:PUBG"
+  ],
+  [
+    "PUBG Battlegrounds",
+    "SEE:PUBG"
+  ],
+  [
+    "Call of Duty",
+    "The Call of Duty series spans many self-contained campaigns across different sub-series (Modern Warfare, Black Ops, WWII, and others), generally following soldiers and operatives through high-stakes military conflicts, real and fictional."
+  ],
+  [
+    "Call of Duty Series",
+    "SEE:Call of Duty"
+  ],
+  [
+    "COD",
+    "SEE:Call of Duty"
+  ],
+  [
+    "CoD",
+    "SEE:Call of Duty"
+  ],
+  [
+    "Assassin's Creed",
+    "The Assassin's Creed series follows the centuries-long shadow war between the freedom-seeking Assassins and the control-obsessed Templars, reliving history through the genetic memories of ancestors accessed via the mysterious Animus device."
+  ],
+  [
+    "Assassin's Creed Series",
+    "SEE:Assassin's Creed"
+  ],
+  [
+    "Assassins Creed",
+    "SEE:Assassin's Creed"
+  ],
+  [
+    "AC",
+    "SEE:Assassin's Creed"
+  ],
+  [
+    "007: First Light",
+    "A standalone origin story for James Bond, following a young, undisciplined Royal Navy aircrewman recruited into MI6's revived 00 program, whose hunt for a rogue agent uncovers a deeper conspiracy that forges him into the spy the world will come to know as 007."
+  ],
+  [
+    "007 First Light",
+    "SEE:007: First Light"
+  ],
+  [
+    "First Light",
+    "SEE:007: First Light"
+  ],
+  [
+    "James Bond First Light",
+    "SEE:007: First Light"
+  ],
+  [
+    "Red Dead Redemption",
+    "Former outlaw John Marston is blackmailed by federal agents into hunting down his old gang across the dying American frontier, in exchange for his family's freedom."
+  ],
+  [
+    "RDR1",
+    "SEE:Red Dead Redemption"
+  ],
+  [
+    "RDR 1",
+    "SEE:Red Dead Redemption"
+  ],
+  [
+    "Red Dead Redemption 1",
+    "SEE:Red Dead Redemption"
+  ],
+  [
+    "God of War (2018)",
+    "Kratos, older and trying to leave his violent past behind, journeys through the Norse realms with his son Atreus to scatter his late wife's ashes, confronting old gods and his own buried nature along the way."
+  ],
+  [
+    "God of War 2018",
+    "SEE:God of War (2018)"
+  ],
+  [
+    "GOW 2018",
+    "SEE:God of War (2018)"
+  ],
+  [
+    "God of War 4",
+    "SEE:God of War (2018)"
+  ],
+  [
+    "God of War (Classic Series)",
+    "The original Greek-era God of War games follow Kratos, a Spartan warrior tricked into serving Ares, on a rage-fueled quest for revenge against the gods of Olympus who ruined his life."
+  ],
+  [
+    "God of War 1",
+    "SEE:God of War (Classic Series)"
+  ],
+  [
+    "God of War 2",
+    "SEE:God of War (Classic Series)"
+  ],
+  [
+    "God of War 3",
+    "SEE:God of War (Classic Series)"
+  ],
+  [
+    "Old God of War",
+    "SEE:God of War (Classic Series)"
+  ],
+  [
+    "Classic God of War",
+    "SEE:God of War (Classic Series)"
+  ],
+  [
+    "Elden Ring",
+    "A nameless Tarnished ventures across the shattered Lands Between to restore the broken Elden Ring and become Elden Lord, battling demigods who each hold a fragment of its power."
+  ],
+  [
+    "Baldur's Gate 3",
+    "Infected with a mind-controlling parasite, a band of unlikely companions races to stop an Illithid invasion of the Sword Coast before the tadpole in their heads transforms them into monsters."
+  ],
+  [
+    "Cyberpunk 2077",
+    "Mercenary V is bound to the digitized ghost of legendary rocker-terrorist Johnny Silverhand in their mind, forcing them to hunt for a way to survive as it slowly overwrites their identity."
+  ],
+  [
+    "Red Dead Redemption 2",
+    "Outlaw Arthur Morgan watches the Van der Linde gang unravel as the Wild West closes in, forcing him to confront loyalty, betrayal, and his own mortality."
+  ],
+  [
+    "Horizon Zero Dawn",
+    "In a world reclaimed by nature and stalked by robotic beasts, outcast hunter Aloy uncovers the buried truth of humanity's downfall and the ancient machine intelligence tied to her own origin."
+  ],
+  [
+    "Horizon Forbidden West",
+    "Aloy pushes into the deadly Forbidden West to find the source of a plague killing the land's ecosystems, uncovering a new threat that could finish what wiped out humanity once before."
+  ],
+  [
+    "Bloodborne",
+    "A nameless Hunter arrives in the plague-ridden city of Yharnam seeking a cure for their affliction, descending into cosmic horror as the line between beast and man dissolves."
+  ],
+  [
+    "Death Stranding",
+    "Porter Sam Bridges treks across a fractured, ghost-haunted America to reconnect isolated survivors to a nationwide network, carrying the weight of a world unraveling behind him."
+  ],
+  [
+    "Ratchet & Clank: Rift Apart",
+    "When a dimension-hopping tyrant fractures reality, Ratchet, Clank, and a Lombax from another dimension named Rivet must team up across parallel worlds to stop him."
+  ],
+  [
+    "Returnal",
+    "Scout Selene crash-lands on an ever-shifting alien planet and dies repeatedly, only to wake at the crash site again, each loop revealing more of the planet's — and her own — buried past."
+  ],
+  [
+    "Halo Infinite",
+    "The Master Chief awakens stranded and without allies on a mysterious Halo ring, rebuilding his strength to face the Banished, a splinter faction bent on wiping out humanity."
+  ],
+  [
+    "Gears 5",
+    "Kait Diaz abandons her post to uncover her family's connection to the monstrous Locust and Swarm, a search for answers that threatens to unravel humanity's fragile peace."
+  ],
+  [
+    "Starfield",
+    "As a member of Constellation, a space explorer investigates mysterious artifacts scattered across the galaxy that may hold the key to humanity's origins among the stars."
+  ],
+  [
+    "Hades",
+    "Zagreus, prince of the Underworld, repeatedly battles his way up from Hell to reach Mount Olympus, defying his father Hades in a bid to learn the truth about his mother."
+  ],
+  [
+    "Disco Elysium",
+    "An amnesiac detective wakes up in a run-down city with no memory of who he is, forced to piece together his identity and solve a murder while confronting the political fractures of the world around him."
+  ],
+  [
+    "Hollow Knight",
+    "A silent knight descends into the ruined, insect-inhabited kingdom of Hallownest to uncover the plague and ancient tragedy that led to its fall."
+  ],
+  [
+    "Half-Life 2",
+    "Scientist Gordon Freeman is pulled back into action to lead a resistance movement against the alien Combine, who have subjugated Earth in the years since a failed research experiment."
+  ],
+  [
+    "Portal 2",
+    "Test subject Chell wakes in a decaying Aperture Science facility and must outwit a resurgent, vengeful AI named GLaDOS using a gun that creates linked portals through space."
+  ],
+  [
+    "Sekiro: Shadows Die Twice",
+    "A disgraced shinobi, brought back from death itself, sets out to rescue his kidnapped lord and take revenge on the samurai clan that dismembered him."
+  ],
+  [
+    "Final Fantasy VII Remake",
+    "Mercenary Cloud Strife joins an eco-terrorist group fighting the megacorporation draining the planet's life force, only to be drawn into a far larger fate tied to a legendary soldier from his past."
+  ]
 ]
