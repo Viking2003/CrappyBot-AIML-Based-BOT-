@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+    <pattern># movie sites #</pattern>
+        <template>
+           Try one of the mentioned links to download the movie you want:
+          <ol>
+           <li> <link>
+             <text>Katmovie</text>
+             <url>https://katworld.net</url>
+            </link> </li>
+            <li> <link>
+             <text>Vegamovies</text>
+             <url>https://vega-ship.com</url>
+            </link></li>
+            <li> <link>
+             <text>HDHub4u</text>
+             <url>https://hdhub4u.bi</url>
+            </link></li>
+            <li> <link>
+             <text>Mp4Movies</text>
+             <url>https://mp4law.com</url>
+            </link></li>
+         </ol>
+        </template>
+</category>
+
+<category>
+   <pattern># download # movie #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
+   <pattern># watch # online # movie #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
+   <pattern># stream # movie #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
+    <pattern># anime sites #</pattern>
+        <template>
+           Try one of the mentioned links to download/stream the anime you want:
+          <ol>
+           <li> <link>
+             <text>PikaHD</text>
+             <url>https://new.pikahd.co</url>
+            </link> </li>
+            <li> <link>
+             <text>GogoAnime</text>
+             <url>https://gogoanime.or.at</url>
+            </link></li>
+            <li> <link>
+             <text>HiAnime</text>
+             <url>https://hianimes.se</url>
+            </link></li>
+             <li> <link>
+             <text>Aniwatch</text>
+             <url>https://aniwatch.co.at</url>
+            </link></li>
+            <li> <link>
+             <text>Crunchyroll(Premium)</text>
+             <url>https://www.crunchyroll.com</url>
+            </link></li>
+         </ol>
+        </template>
+</category>
+
+<category>
+    <pattern># download # anime #</pattern>
+    <template><srai>anime sites</srai></template>
+</category>
+
+<category>
+    <pattern># watch # online # anime #</pattern>
+    <template><srai>anime sites</srai></template>
+</category>
+
+<category>
+    <pattern># stream # anime #</pattern>
+    <template><srai>anime sites</srai></template>
+</category>
+
+</aiml>
