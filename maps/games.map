@@ -25,11 +25,124 @@
   ["The Last of Us Part 2", "SEE:The Last of Us Part II"],
   ["Detroit: Become Human", "Three androids—Kara, Connor, and Markus—navigate deviancy, identity, and rebellion in near-future Detroit, with player choices shaping their fates and android-human relations."],
   ["God of War Ragnarök", "Kratos and his son Atreus, revealed as the trickster god Loki, journey through the Nine Realms trying to prevent—or survive—the prophesied apocalypse of Ragnarök."],
+  [
+    "Grand Theft Auto (1997)",
+    "The original top-down Grand Theft Auto sends players on crime sprees across three cities standing in for Liberty City, Vice City, and San Andreas, racking up cash and a wanted level while working missions for rival crime bosses."
+  ],
+  [
+    "GTA1",
+    "SEE:Grand Theft Auto (1997)"
+  ],
+  [
+    "GTA 1",
+    "SEE:Grand Theft Auto (1997)"
+  ],
+  [
+    "GTA I",
+    "SEE:Grand Theft Auto (1997)"
+  ],
+  [
+    "Grand Theft Auto 2",
+    "Set in a near-future, gang-controlled Anywhere City, GTA 2 has players play warring crime syndicates against each other for whichever gang currently pays best, with little story beyond climbing each gang's respect ladder."
+  ],
+  [
+    "GTA2",
+    "SEE:Grand Theft Auto 2"
+  ],
+  [
+    "GTA 2",
+    "SEE:Grand Theft Auto 2"
+  ],
+  [
+    "GTA II",
+    "SEE:Grand Theft Auto 2"
+  ],
+  [
+    "Grand Theft Auto III",
+    "Silent protagonist Claude is betrayed and left for dead during a heist by his girlfriend Catalina, and claws his way up Liberty City's mob-controlled underworld in the series' first fully 3D open world."
+  ],
+  [
+    "GTA3",
+    "SEE:Grand Theft Auto III"
+  ],
+  [
+    "GTA 3",
+    "SEE:Grand Theft Auto III"
+  ],
+  [
+    "GTA III",
+    "SEE:Grand Theft Auto III"
+  ],
+  [
+    "Grand Theft Auto: Vice City",
+    "Fresh out of prison, mobster Tommy Vercetti is set up during a drug deal gone wrong in neon-soaked Vice City, and rebuilds his standing by seizing control of the city's criminal empire piece by piece."
+  ],
+  [
+    "GTA Vice City",
+    "SEE:Grand Theft Auto: Vice City"
+  ],
+  [
+    "Vice City",
+    "SEE:Grand Theft Auto: Vice City"
+  ],
+  [
+    "GTA VC",
+    "SEE:Grand Theft Auto: Vice City"
+  ],
+  [
+    "Grand Theft Auto: San Andreas",
+    "Carl 'CJ' Johnson returns home to Los Santos after his mother's murder, only to be framed by corrupt cops, and fights his way through gang warfare and a sprawling conspiracy across the state of San Andreas to protect his family."
+  ],
+  [
+    "GTA San Andreas",
+    "SEE:Grand Theft Auto: San Andreas"
+  ],
+  [
+    "San Andreas",
+    "SEE:Grand Theft Auto: San Andreas"
+  ],
+  [
+    "GTA SA",
+    "SEE:Grand Theft Auto: San Andreas"
+  ],
+  [
+    "Grand Theft Auto IV",
+    "Eastern European immigrant and war veteran Niko Bellic comes to Liberty City chasing his cousin's promise of the American Dream, only to be dragged back into violence as old debts and enemies from his past catch up with him."
+  ],
+  [
+    "GTA4",
+    "SEE:Grand Theft Auto IV"
+  ],
+  [
+    "GTA 4",
+    "SEE:Grand Theft Auto IV"
+  ],
+  [
+    "GTA IV",
+    "SEE:Grand Theft Auto IV"
+  ],
+  [
+    "Grand Theft Auto V",
+    "Three very different criminals — retired robber Michael, ambitious hustler Franklin, and volatile loose cannon Trevor — cross paths and pull off increasingly dangerous heists across Los Santos and Blaine County."
+  ],
+  [
+    "GTA5",
+    "SEE:Grand Theft Auto V"
+  ],
+  [
+    "GTA 5",
+    "SEE:Grand Theft Auto V"
+  ],
+  [
+    "GTA V",
+    "SEE:Grand Theft Auto V"
+  ],
   ["GTA6", "SEE:Grand Theft Auto VI"],
   ["GTA 6", "SEE:Grand Theft Auto VI"],
   ["GTA VI", "SEE:Grand Theft Auto VI"],
   ["GTAVI", "SEE:Grand Theft Auto VI"],
   ["Grand Theft Auto VI", "Set in the fictional Vice City and beyond, GTA VI follows a Bonnie-and-Clyde-style criminal duo navigating a satirical, crime-ridden modern America in Rockstar's next open-world saga."],
+  
   ["Marvel's Wolverine", "Logan, the feral mutant with an unbreakable adamantium skeleton and rapid healing factor, is thrust into a brutal, R-rated single-player story exploring his violent past and code of honor."],
   ["Wolverine", "SEE:Marvel's Wolverine"],
   [
@@ -181,8 +294,24 @@
     "Mercenary V is bound to the digitized ghost of legendary rocker-terrorist Johnny Silverhand in their mind, forcing them to hunt for a way to survive as it slowly overwrites their identity."
   ],
   [
+    "Cyberpunk",
+    "SEE:Cyberpunk 2077"
+  ],
+  [
     "Red Dead Redemption 2",
     "Outlaw Arthur Morgan watches the Van der Linde gang unravel as the Wild West closes in, forcing him to confront loyalty, betrayal, and his own mortality."
+  ],
+  [
+    "RDR2",
+    "SEE:Red Dead Redemption 2"
+  ],
+  [
+    "RDR 2",
+    "SEE:Red Dead Redemption 2"
+  ],
+  [
+    "Red Dead Redemption2",
+    "SEE:Red Dead Redemption 2"
   ],
   [
     "Horizon Zero Dawn",
@@ -203,6 +332,10 @@
   [
     "Ratchet & Clank: Rift Apart",
     "When a dimension-hopping tyrant fractures reality, Ratchet, Clank, and a Lombax from another dimension named Rivet must team up across parallel worlds to stop him."
+  ],
+   [
+    "Ratchet and Clank",
+    "SEE:Ratchet & Clank: Rift Apart"
   ],
   [
     "Returnal",
@@ -247,5 +380,16 @@
   [
     "Final Fantasy VII Remake",
     "Mercenary Cloud Strife joins an eco-terrorist group fighting the megacorporation draining the planet's life force, only to be drawn into a far larger fate tied to a legendary soldier from his past."
-  ]
+  ],
+  ["Watch Dogs", "The Watch Dogs series follows different hacktivists in different cities — Aiden Pearce in Chicago, Marcus Holloway's DedSec crew in San Francisco, and a Londoner of the player's choosing in Legion — each exploiting a citywide surveillance network (ctOS) to expose and fight corrupt corporations and authoritarian control."],
+  ["Watch Dogs Series", "SEE:Watch Dogs"],
+  ["WD", "SEE:Watch Dogs"],
+  ["Watch Dogs (2014)", "Hacker Aiden Pearce exploits Chicago's citywide ctOS surveillance system to track down the people responsible for his niece's death, uncovering a web of corruption while becoming judge, jury, and vigilante along the way."],
+  ["Watch Dogs 1", "SEE:Watch Dogs (2014)"],
+  ["WD1", "SEE:Watch Dogs (2014)"],
+  ["Watch Dogs 2", "Hacker Marcus Holloway joins the DedSec collective in San Francisco to take down ctOS 2.0, a surveillance system run by the tech giant Blume that framed him for a crime he didn't commit."],
+  ["WD2", "SEE:Watch Dogs 2"],
+  ["Watch Dogs Legion", "Set in a near-future, authoritarian-controlled London, DedSec recruits and plays as literally any civilian in the city to dismantle the private military force Albion and uncover the mysterious mastermind Zero-Day."],
+  ["Watch Dogs: Legion", "SEE:Watch Dogs Legion"],
+  ["WD Legion", "SEE:Watch Dogs Legion"]
 ]

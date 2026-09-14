@@ -107,7 +107,7 @@
 
     <category>
         <pattern># created you #</pattern>
-        <template>My creator is Vivek Yadav!</template>
+        <template>My creator is <bot name="father"/>!</template>
     </category>
     
     <category>
