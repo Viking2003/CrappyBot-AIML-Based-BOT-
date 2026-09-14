@@ -27,23 +27,5 @@
                 </category>
             </learnf>
         </template>
-    </category>
-    
-    <category>
-        <pattern>* IS *</pattern>
-        <template>
-            I have remembered that.
-            <learn>
-                <category>
-                    <pattern>What is <eval><star/></eval></pattern>
-                    <template>I believe it is <eval><star index="2"/></eval></template>
-                </category>
-                 <category>
-                    <pattern>Name <eval><star index="2"/></eval></pattern>
-                    <template>How about <eval><star/></eval> ?</template>
-                </category>
-            </learn>
-        </template>
-    </category>
-    
+    </category> 
 </aiml>
