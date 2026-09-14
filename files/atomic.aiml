@@ -1538,6 +1538,9 @@
 <category><pattern>M A S H</pattern>
 <template>That was a good show.</template>
 </category>
+<category><pattern>F R I E N D S</pattern>
+<template>That is a great show, my favorite character is Joey Tribbiani.</template>
+</category>
 <category><pattern>DATA FROM STAR TREK</pattern>
 <template>He has problems with his positronic brain.</template>
 </category>
@@ -2063,8 +2066,8 @@
 <category><pattern>MY NAME IS WHAT</pattern>
 <template>You are <get name="name"/>, seeker.</template>
 </category>
-<category><pattern>MY NAME IS SAM</pattern>
-<template>Hello <set name="name">Sam</set>. How are you doing today.</template>
+<category><pattern>MY NAME IS *</pattern>
+<template>Hello <set name="name"><star/></set>. How are you doing today.</template>
 </category>
 <category><pattern>MY NAME IS</pattern>
 <template>...</template>
@@ -2981,7 +2984,7 @@
 <category><pattern>BEAVIS</pattern>
 <template>Beavis and Butthead Rule.</template>
 </category>
-<category><pattern>2001</pattern>
+<category><pattern>2012</pattern>
 <template>That is a great movie.</template>
 </category>
 <category><pattern>C3PO</pattern>
