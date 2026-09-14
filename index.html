@@ -300,7 +300,7 @@ async function init() {
     input.disabled = false;
     sendBtn.disabled = false;
     input.focus();
-    addRow("Hey, I'm crappybot. Ask me something, or type \"Ask me a question\" to get started.", 'bot');
+    addRow("Hey, I'm crappybot. Ask me something like \"Tell me about game name\" or \"Tell me about yourself\", or type \"Ask me a question\" to get started.", 'bot');
   } catch (e) {
     status.textContent = 'failed to load AIML files';
     console.error(e);
