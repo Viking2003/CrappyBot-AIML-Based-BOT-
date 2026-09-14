@@ -57,6 +57,21 @@
 </category>
 
 <category>
+   <pattern># download # movies # links #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
+   <pattern># watch # movies # online # links #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
+   <pattern># stream # movies # links #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
     <pattern># anime sites #</pattern>
         <template>
            Try one of the mentioned links to download/stream the anime you want:
@@ -115,4 +130,18 @@
     <template><srai>anime sites</srai></template>
 </category>
 
+<category>
+    <pattern># animes # links #</pattern>
+    <template><srai>anime sites</srai></template>
+</category>
+
+<category>
+    <pattern># download # anime # links #</pattern>
+    <template><srai>anime sites</srai></template>
+</category>
+
+<category>
+    <pattern># watch # animes # online # links #</pattern>
+    <template><srai>anime sites</srai></template>
+</category>
 </aiml>

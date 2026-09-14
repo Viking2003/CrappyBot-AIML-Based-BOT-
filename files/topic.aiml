@@ -30,7 +30,14 @@
         </category>
         <category>
             <pattern>*</pattern>
-            <template>Wanna talk about something else? If yes, say "topic games" or "topic animals" or you can ask, "tell me about (game name)".</template>
+            <template>Wanna talk about something else? 
+            If yes, 
+            <ol>
+            <li>Try "topic games" or "topic animals".</li>
+            <li>Try "tell me about (game name)", and I can tell you more about it.</li>
+            <li>Try "movie sites" or "anime sites", and I can provide you with a list of websites to watch movies or anime online/download for free.</li>
+            </ol>
+            </template>
             <think><set name="topic">*</set></think>
         </category>
     </topic>
