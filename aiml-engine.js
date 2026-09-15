@@ -516,10 +516,17 @@ class AIMLEngine {
 
   _formatDate(d, jformat) {
     const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-    if (jformat && jformat.includes('MMMM')) {
-      return `${months[d.getMonth()]} ${d.getDate()}`;
-    }
-    return d.toDateString();
+    if (!jformat) return d.toDateString();
+    // Replace each format token found in the *original* string in one pass,
+    // so a month name substitution (e.g. "October") can never be re-matched
+    // by the day/year token patterns afterward.
+    return jformat.replace(/M{4,}|d{1,2}|y{4}/gi, (token) => {
+      const c = token[0].toLowerCase();
+      if (c === 'm') return months[d.getMonth()];
+      if (c === 'd') return String(d.getDate());
+      if (c === 'y') return String(d.getFullYear());
+      return token;
+    });
   }
 
   _evalInterval(node, ctx) {

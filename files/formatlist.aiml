@@ -12,6 +12,7 @@
     <category>
         <pattern>book #</pattern>
         <template>
+           <think><set name="topic">book</set></think>
             <ol>
                 <li>Book train ticket</li>
                 <li>Book flight ticket</li>
@@ -22,12 +23,13 @@
                 <li>Note: Authentication is required for booking process.</li>
                 <li>Ensure responsibility of your belongings.</li>
                 <li>Ensure to maintain hygience, don't litter and help us keep ourselves clean.</li>
+                <li>You can type "main menu" to come back here to the main menu.</li>
             </ul>
         </template>
     </category>
     
+  <topic name="book">
     <category>
-      <that>book</that>
         <pattern>1</pattern>
         <template>
            Train ticket booking in process.
@@ -35,7 +37,6 @@
     </category>
     
     <category>
-       <that>book</that>
         <pattern>2</pattern>
         <template>
            Flight ticket booking in process.
@@ -43,7 +44,6 @@
     </category>
     
     <category>
-       <that>book</that>
         <pattern>3</pattern>
         <template>
            Redirecting to our website...
@@ -57,4 +57,10 @@
             </button>
         </template>
     </category>
+    
+    <category>
+        <pattern># main menu #</pattern>
+        <template><srai>book</srai></template>
+    </category>
+  </topic>
 </aiml>
