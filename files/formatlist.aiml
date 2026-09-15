@@ -10,7 +10,7 @@
     </category>
     
     <category>
-        <pattern>list</pattern>
+        <pattern>book #</pattern>
         <template>
             <ol>
                 <li>Book train ticket</li>
@@ -27,6 +27,7 @@
     </category>
     
     <category>
+      <that>book</that>
         <pattern>1</pattern>
         <template>
            Train ticket booking in process.
@@ -34,6 +35,7 @@
     </category>
     
     <category>
+       <that>book</that>
         <pattern>2</pattern>
         <template>
            Flight ticket booking in process.
@@ -41,6 +43,7 @@
     </category>
     
     <category>
+       <that>book</that>
         <pattern>3</pattern>
         <template>
            Redirecting to our website...
