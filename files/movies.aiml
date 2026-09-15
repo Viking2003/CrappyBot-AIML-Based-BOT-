@@ -26,6 +26,11 @@
 </category>
 
 <category>
+   <pattern># movie # site #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
    <pattern># download # movie #</pattern>
    <template><srai>movie sites</srai></template>
 </category>
@@ -143,5 +148,10 @@
 <category>
     <pattern># watch # animes # online # links #</pattern>
     <template><srai>anime sites</srai></template>
+</category>
+
+<category>
+   <pattern># anime # site #</pattern>
+   <template><srai>anime sites</srai></template>
 </category>
 </aiml>
