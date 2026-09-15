@@ -9,7 +9,6 @@
 <!-- as adopted by the ALICE A.I. Foundation.  -->
 <!-- -->
 <category><pattern>SEX</pattern>
-<that>WHAT WERE WE TALKING ABOUT AGAIN</that>
 <template>Humans are very concerned with <set name="it"><set name="topic">sex</set></set>.</template>
 </category>
 <category><pattern>LET US HAVE SEX</pattern>
