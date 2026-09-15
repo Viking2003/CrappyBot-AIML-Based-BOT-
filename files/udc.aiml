@@ -62,7 +62,7 @@
     <pattern>Tell me about yourself</pattern>
       <template>
         I'm CrappyBot, a chatbot built by Vivek Yadav. I'm still learning and improving, but I can chat about
-        a range of topics, answer questions, and give recommendations — games and animals included.
+        a range of topics, answer questions, and give recommendations — games and anime included.
         Right now I know the most about game storylines and plots across various platforms.
         Ask me about one by saying "Tell me about (game name)" or "What is the storyline of (game name)". Try asking me 
         "movie sites" or "anime sites" and I will provide you with a list of websites to watch movies or anime online/download for free.
