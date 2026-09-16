@@ -15,7 +15,7 @@
 <think>
 	<set name="coins">50</set>
 </think>
-Welcome to my slot machine.<br/>You start with<get name="coins"/>coins and each spin of the machine costs you 1 coin.<br/>The game is over when you have either lost all your money or made 250 coins.<br/>Good luck!<br/><br/>Type START to load the machine.
+Welcome to my slot machine.<break/>You start with<get name="coins"/>coins and each spin of the machine costs you 1 coin.<break/>The game is over when you have either lost all your money or made 250 coins.<break/>Good luck!<break/><break/>Type START to load the machine.
 </template>
 </category>
 
@@ -26,14 +26,14 @@ Welcome to my slot machine.<br/>You start with<get name="coins"/>coins and each 
 <pattern>START</pattern>
 <that>TYPE START TO LOAD THE MACHINE</that>
 <template>
-	Reels: -&gt; ? ? ? &lt;-<br/><br/>
-	A A A pays 100<br/>
-	K K K pays 50<br/>
-	Q Q Q pays 25<br/>
-	J J J pays 15<br/>
-	7 7 7 pays 7<br/>
-	A A - pays 2<br/><br/>
-	You have<get name="coins"/>coins in the bank.<br/><br/>
+	Reels: -&gt; ? ? ? &lt;-<break/><break/>
+	A A A pays 100<break/>
+	K K K pays 50<break/>
+	Q Q Q pays 25<break/>
+	J J J pays 15<break/>
+	7 7 7 pays 7<break/>
+	A A - pays 2<break/><break/>
+	You have<get name="coins"/>coins in the bank.<break/><break/>
 	<set name="slotsmessage">Type S to spin the reels</set>  
 </template>
 </category>
@@ -56,22 +56,22 @@ Welcome to my slot machine.<br/>You start with<get name="coins"/>coins and each 
 <category>
 <pattern>XSLOTSLOOP</pattern>
 <template>
-	Reels: -&gt;<set name="reels"><get name="reel1"/><get name="reel2"/><get name="reel3"/></set> &lt;-<br/>
-	<srai>XSLOTHOLD</srai><br/>
-	A A A pays 100<br/>
-	K K K pays 50<br/>
-	Q Q Q pays 25<br/>
-	J J J pays 15<br/>
-	7 7 7 pays 7<br/>
-	A A - pays 2<br/><br/>
-	<srai>XCHECKWIN</srai><br/>		
+	Reels: -&gt;<set name="reels"><get name="reel1"/><get name="reel2"/><get name="reel3"/></set> &lt;-<break/>
+	<srai>XSLOTHOLD</srai><break/>
+	A A A pays 100<break/>
+	K K K pays 50<break/>
+	Q Q Q pays 25<break/>
+	J J J pays 15<break/>
+	7 7 7 pays 7<break/>
+	A A - pays 2<break/><break/>
+	<srai>XCHECKWIN</srai><break/>		
 			<think>
 			<set name="bank">You have<get name="coins"/>coins in the bank.</set>
 				<condition name="coins"> 
 					<li value="1"><set name="bank">You have 1 coin in the bank.</set></li>
 				</condition>
 			</think>		
-		<get name="bank"/><br/><br/>
+		<get name="bank"/><break/><break/>
 	<srai>XCHECKGAMEOVER</srai><get name="slotsmessage"/> 
 </template>
 </category>
@@ -87,7 +87,7 @@ Welcome to my slot machine.<br/>You start with<get name="coins"/>coins and each 
 	<random>
 		<li><think><set name="slotsmessage">Type S to spin the reels</set></think></li>
 		<li><think><set name="slotsmessage">Type S to spin the reels</set></think></li>
-		<li>HOLD: -&gt; 1 2 3 &lt;-<think><set name="slotsmessage">HOLD AVAILABLE - Enter the reels you wish to hold. E.g. 12 will hold reels 1 and 2 and spin reel 3.<br/>Type S to spin all three.</set>
+		<li>HOLD: -&gt; 1 2 3 &lt;-<think><set name="slotsmessage">HOLD AVAILABLE - Enter the reels you wish to hold. E.g. 12 will hold reels 1 and 2 and spin reel 3.<break/>Type S to spin all three.</set>
 		</think></li>
 	</random>
 </template>
@@ -365,8 +365,8 @@ Welcome to my slot machine.<br/>You start with<get name="coins"/>coins and each 
 <template>
 <think>
 	<condition name="coins"> 
-		<li value="0"><set name="slotsmessage">B A N K R U P T ! ! !<br/>GAME OVER</set></li>
-		<li value="250"><set name="slotsmessage">CONGRATULATIONS! YOU HAVE BROKEN THE BANK!!!!<br/>GAME OVER</set></li> 
+		<li value="0"><set name="slotsmessage">B A N K R U P T ! ! !<break/>GAME OVER</set></li>
+		<li value="250"><set name="slotsmessage">CONGRATULATIONS! YOU HAVE BROKEN THE BANK!!!!<break/>GAME OVER</set></li> 
 	</condition>
 </think> 
 </template>
