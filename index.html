@@ -46,9 +46,21 @@
     padding: 18px 20px;
     border-bottom: 1px solid #0e1517;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     background: var(--panel-2);
+  }
+  header .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  header .logo {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
   }
   header .name {
     font-family: 'Space Grotesk', sans-serif;
@@ -179,9 +191,12 @@
 <body>
   <div class="app">
     <header>
-      <div>
-        <div class="name">crappybot</div>
-        <div class="status" id="status">loading…</div>
+      <div class="brand">
+        <img src="https://img.magnific.com/free-vector/chatbot-chat-message-vectorart_78370-4104.jpg" alt="" class="logo">
+        <div>
+          <div class="name">crappybot</div>
+          <div class="status" id="status">loading…</div>
+        </div>
       </div>
       <button id="resetBtn" title="Clear memory and start over">New chat</button>
     </header>
@@ -238,6 +253,8 @@ const MANIFEST = {
     'files/currencyworld.aiml',
     'files/luckyslotgame.aiml',
     'files/horoscope.aiml',
+    'files/religion.aiml',
+    'files/conversations.aiml',
   ],
 };
 
