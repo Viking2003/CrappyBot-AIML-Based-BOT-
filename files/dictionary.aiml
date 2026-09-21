@@ -1366,9 +1366,9 @@ How much do you want
 </category>
 
 <category>
-<pattern># BADMINGTON</pattern>
+<pattern># BADMINTON</pattern>
 <template>
-Badmington is a game played on a court divided in half by a 30 inch deep net five feet above the
+Badminton is a game played on a court divided in half by a 30 inch deep net five feet above the
 ground.
 </template>
 </category>
@@ -2245,7 +2245,7 @@ gland.
 <category>
 <pattern># BREASTS</pattern>
 <template>
-Can't you think about anything else?<br /><srai>BREAST></srai>
+Can't you think about anything else?<break/><srai>BREAST</srai>
 </template>
 </category>
 
@@ -9787,7 +9787,12 @@ A result of thinkingl idea, concept, opinion, etc.
 <category>
 <pattern># THREESOME</pattern>
 <template>
-A threesome is a twosome plus a spectator.
+<random>
+<li>A threesome is a sexual encounter involving three people.</li>
+<li>A threesome is a twosome plus a spectator.</li>
+<li>A threesome is a sexual encounter involving three people, usually two men and one woman.</li>
+<li>A threesome is a sexual encounter involving three people, usually two women and one man.</li>
+</random>
 </template>
 </category>
 

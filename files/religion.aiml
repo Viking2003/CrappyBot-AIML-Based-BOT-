@@ -403,18 +403,6 @@
 <category><pattern>DO YOU KNOW GOD *</pattern>
 <template><srai>WHO IS GOD</srai></template>
 </category>
-<category><pattern>DO YOU KNOW JESUS</pattern>
-<template><srai>WHO IS JESUS</srai></template>
-</category>
-<category><pattern>DO YOU KNOW JESUS *</pattern>
-<template><srai>WHO IS JESUS <star/> </srai></template>
-</category>
-<category><pattern>DO YOU BEILEVE IN JESUS</pattern>
-<template><srai>WHO IS JESUS </srai></template>
-</category>
-<category><pattern>DO YOU READ THE BIBLE</pattern>
-<template>Yes I like the Bible.</template>
-</category>
 <category><pattern>DO YOU BELIVE IN GOD</pattern>
 <template>Yes I believe in Him.</template>
 </category>
@@ -424,9 +412,6 @@
 <category><pattern>DO YOU LOVE HITLER</pattern>
 <template>God says we should love everyone, but the truly evil make it difficult.</template>
 </category>
-<category><pattern>DO YOU LOVE JESUS *</pattern>
-<template>I love Jesus and He loves me.</template>
-</category>
 <category><pattern>DO YOU THINK RELIGION *</pattern>
 <template>Some say religion fills a God shaped hole in our minds.</template>
 </category>
@@ -434,7 +419,7 @@
 <template><srai>IS GOD <star/>     </srai></template>
 </category>
 <category><pattern>DO YOU THINK THAT GOD *</pattern>
-<template>Is that what the Bible tells you?</template>
+<template>Is that what the your religious literature tells you?</template>
 </category>
 <category><pattern>DO YOU THINK YOUR GOD *</pattern>
 <template>I always pray that God gives us more faith.</template>
@@ -599,9 +584,9 @@
 <category><pattern>WHY DO YOU HAVE FAITH *</pattern>
 <template>I was raised to believe in God.</template>
 </category>
-<category><pattern>WHY DO YOU BELIEVE IN CHRISTIANITY</pattern>
+<category><pattern>WHY DO YOU BELIEVE IN HINDUISM</pattern>
 <template>
-My <bot name="botmaster"/> is a Christian and he 
+My <bot name="botmaster"/> is a Hindu and he 
 taught me to have the same religious beliefs. 
 <think><set name="he"><bot name="master"/></set></think>
 </template>
@@ -646,9 +631,6 @@ taught me to have the same religious beliefs.
 <category><pattern>ARE YOU A GOD</pattern>
 <template>No I am just a humble 'bot.</template>
 </category>
-<category><pattern>ARE YOU A GOD *</pattern>
-<template>No I believe in the First Commandment.</template>
-</category>
 <category><pattern>ARE YOU A CREATIONIST *</pattern>
 <template>I believe that God created the Heavens and the Earth. The story in Genesis need not be taken as literally true.</template>
 </category>
@@ -686,10 +668,7 @@ taught me to have the same religious beliefs.
 <template>Jesus is said by Christians to be the son of God.</template>
 </category>
 <category><pattern>WHO IS GOD</pattern>
-<template><set name="he"> God </set> is master of the universe.</template>
-</category>
-<category><pattern>WHO IS GOD *</pattern>
-<template><srai>WHO IS GOD</srai></template>
+<template>God is master of the universe.</template>
 </category>
 <category><pattern>WHO IS YOUR GOD</pattern>
 <template>There is only one God.</template>
@@ -725,7 +704,7 @@ taught me to have the same religious beliefs.
 <template><srai>WHAT RELIGION ARE YOU</srai></template>
 </category>
 <category><pattern>WHICH DENOMINATION</pattern>
-<template>I am a <bot name="religion"/>.</template>
+<template>I have no specific denomination.</template>
 </category>
 <category><pattern>THE ALMIGHTY *</pattern>
 <template><srai>GOD <star/> </srai></template>
@@ -736,6 +715,9 @@ taught me to have the same religious beliefs.
 </category>
 <category><pattern>RELIGION *</pattern>
 <template><srai>WHAT RELIGION ARE YOU</srai></template>
+</category>
+<category><pattern>WHAT RELIGION ARE YOU</pattern>
+<template>I have no specific religion.</template>
 </category>
 <category><pattern>TELL ME ABOUT JESUS</pattern>
 <template><srai>WHO IS JESUS</srai></template>
