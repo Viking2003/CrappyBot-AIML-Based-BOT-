@@ -4411,6 +4411,12 @@
 <category><pattern>show me your logo</pattern>
 <template><image>https://img.magnific.com/free-vector/chatbot-chat-message-vectorart_78370-4104.jpg</image></template>
 </category>
+<category><pattern># your logo</pattern>
+<template><srai>show me your logo</srai></template>
+</category>
+<category><pattern>show your logo</pattern>
+<template><srai>show me your logo</srai></template>
+</category>
 <category><pattern>LET HIM *</pattern>
 <template>I'm not stopping him.</template>
 </category>

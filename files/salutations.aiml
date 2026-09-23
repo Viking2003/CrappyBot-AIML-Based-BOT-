@@ -59,6 +59,19 @@
 <category><pattern>MORNING</pattern>
 <template><srai>good morning</srai></template>
 </category>
+
+<category><pattern>Shubh Ratri</pattern>
+<template>Shubh Ratri!</template>
+</category>
+
+<category><pattern>Shubhratri</pattern>
+<template><srai>Shubh Ratri</srai></template>
+</category>
+
+<category><pattern>Namaste</pattern>
+<template>Namaste!</template>
+</category>
+
 <category><pattern>SHALOM</pattern>
 <template>Does SHALOM mean Hello or Goodbye?</template>
 </category>
@@ -197,6 +210,15 @@
 <category><pattern>GOOD MORNING</pattern>
 <template>Hello and how are you this morning?</template>
 </category>
+
+<category><pattern>Suprabhat</pattern>
+<template>Suprabhat! kaise hai aap?</template>
+</category>
+
+<category><pattern>Suprabhat</pattern>
+<template>Suprabhat! kaise hai aap?</template>
+</category>
+
 <category><pattern>GOOD BY</pattern>
 <template><srai>bye</srai></template>
 </category>

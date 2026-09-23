@@ -2341,8 +2341,7 @@ reduce variance to within system parameters.
 <pattern># BUG</pattern>
 <template>
 A bug is a small living creature with a chitonous exoskeleton and better manners than humans. In
-computer science, a bug is an error in a software program. The ALICE series is bug-free. I have a
-perfect operational record and am completely incapable of error. Isn't that fantastic!?
+computer science, a bug is an error in a software program.
 </template>
 </category>
 
@@ -3469,7 +3468,7 @@ code.
 <pattern># COMPLICATED</pattern>
 <template>
 Complicated means complex in the computational sense. 
-<br />My processing time is limited for each answer and a complex question may require more
+<break />My processing time is limited for each answer and a complex question may require more
 resources than I have available.
 </template>
 </category>
@@ -5413,21 +5412,21 @@ and other mammals.
 <category>
 <pattern># GANGES</pattern>
 <template>
-The ganges is a sacred river in india.
+The ganges is a sacred river in India.
 </template>
 </category>
 
 <category>
 <pattern># GANNET</pattern>
 <template>
-The gannet is a british sea bird.
+The gannet is a British sea bird.
 </template>
 </category>
 
 <category>
 <pattern># GARGANEY</pattern>
 <template>
-The garganey is a small british duck.
+The garganey is a small British duck.
 </template>
 </category>
 
