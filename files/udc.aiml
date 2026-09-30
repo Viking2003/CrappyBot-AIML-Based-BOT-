@@ -52,9 +52,35 @@
     </category>
     
      <category>
-        <pattern>GTEST *</pattern>
+        <pattern>Let us go</pattern>
         <template>
-            <gender><star/></gender>
+            <random>
+                <li>Where do you want to go?</li>
+                <li>Let's go somewhere!</li>
+                <li>Where are we going?</li>
+                <li>What can I do for you?</li>
+            </random>
+        </template>
+    </category>
+
+     <category>
+        <pattern>Let's go</pattern>
+        <template>
+           <srai>Let us go</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>Let's get back #</pattern>
+        <template>
+           <srai>Let us go</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Let's move ahead #</pattern>
+        <template>
+           <srai>Let us go</srai>
         </template>
     </category>
     

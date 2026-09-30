@@ -64,8 +64,18 @@
     </category>
     
     <category>
-        <pattern>I want *</pattern>
+        <pattern>I want # attire #</pattern>
         <template>Kindly specify size and material for the attire.</template>
+    </category>
+
+    <category>
+        <pattern>I want # clothing #</pattern>
+        <template><srai>I want # attire #</srai></template>
+    </category>
+
+    <category>
+        <pattern>I want # clothes #</pattern>
+        <template><srai>I want # attire #</srai></template>
     </category>
     
     
