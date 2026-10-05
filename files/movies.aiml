@@ -31,7 +31,37 @@
 </category>
 
 <category>
+   <pattern># series # site #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
+   <pattern># series # sites #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
+   <pattern># web series #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
+   <pattern># series # links #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
+   <pattern># series #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
    <pattern># download # movie #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
+   <pattern># watch # movie #</pattern>
    <template><srai>movie sites</srai></template>
 </category>
 
@@ -42,6 +72,11 @@
 
 <category>
    <pattern># stream # movie #</pattern>
+   <template><srai>movie sites</srai></template>
+</category>
+
+<category>
+   <pattern># movie # links #</pattern>
    <template><srai>movie sites</srai></template>
 </category>
 

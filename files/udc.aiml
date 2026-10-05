@@ -6,6 +6,10 @@
         <template>Hii, how can I help you today?</template>
     </category>
     
+     <category>
+        <pattern>Hi #</pattern>
+        <template><srai>Hello</srai></template>
+    </category>
     <category>
         <pattern>Hii #</pattern>
         <template><srai>Hello</srai></template>
@@ -46,6 +50,13 @@
 
     <category>
         <pattern>What # your name #</pattern>
+        <template>
+            <srai>Tell me your name</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>Who are you</pattern>
         <template>
             <srai>Tell me your name</srai>
         </template>
