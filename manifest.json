@@ -1,0 +1,25 @@
+{
+  "name": "CrappyBot",
+  "short_name": "CrappyBot",
+  "description": "A browser-based AIML chatbot with its own custom interpreter.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#182427",
+  "theme_color": "#182427",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://img.magnific.com/free-vector/chatbot-chat-message-vectorart_78370-4104.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "https://img.magnific.com/free-vector/chatbot-chat-message-vectorart_78370-4104.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

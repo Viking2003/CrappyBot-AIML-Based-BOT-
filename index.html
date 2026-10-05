@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>crappybot</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#182427">
+<link rel="icon" href="https://img.magnific.com/free-vector/chatbot-chat-message-vectorart_78370-4104.jpg">
+<link rel="apple-touch-icon" href="https://img.magnific.com/free-vector/chatbot-chat-message-vectorart_78370-4104.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -357,6 +361,12 @@ resetBtn.addEventListener('click', () => {
 });
 
 init();
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch((e) => console.error('Service worker registration failed:', e));
+  });
+}
 </script>
 </body>
 </html>
